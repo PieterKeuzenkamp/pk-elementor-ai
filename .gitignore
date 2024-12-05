@@ -1,0 +1,73 @@
+# WordPress specific files
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+# WordPress debugging
+debug.log
+
+# WordPress temporary files
+*.tmp
+*.bak
+*.swp
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# Node modules and build files
+node_modules/
+dist/
+build/
+*.map
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/
+composer.lock
+
+# OpenAI API key files
+api-keys.php
+**/api-keys.php
+**/credentials.php
+
+# Cache files
+*.cache
+.phpunit.result.cache
+
+# Package managers
+yarn-error.log
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Testing
+/phpunit.xml
+.phpunit.result.cache
+/tests/coverage/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
