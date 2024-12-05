@@ -1,0 +1,205 @@
+.pk-ai-widget {
+    position: relative;
+    width: 100%;
+}
+
+.pk-ai-content {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.pk-ai-content:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pk-ai-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Prompt Input Styling */
+.pk-ai-prompt-container {
+    margin-bottom: 20px;
+}
+
+.pk-ai-prompt-input {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 14px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.pk-ai-prompt-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Character Counter */
+.pk-ai-character-counter {
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.pk-ai-counter-warning {
+    color: #e74c3c;
+}
+
+/* Buttons */
+.pk-ai-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+.pk-ai-generate {
+    background: #3498db;
+    color: white;
+}
+
+.pk-ai-generate:hover {
+    background: #2980b9;
+}
+
+.pk-ai-regenerate {
+    background: #2ecc71;
+    color: white;
+}
+
+.pk-ai-regenerate:hover {
+    background: #27ae60;
+}
+
+/* Loading Animation */
+.pk-ai-loading .pk-ai-content {
+    opacity: 0.7;
+}
+
+.pk-ai-loading-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.pk-ai-loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: pk-ai-spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+.pk-ai-loading-text {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Error Messages */
+.pk-ai-error {
+    background: #fee;
+    border-left: 4px solid #e74c3c;
+    color: #c0392b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}
+
+/* Tooltips */
+.pk-ai-tooltip {
+    display: inline-block;
+    margin-left: 5px;
+    color: #666;
+    cursor: help;
+}
+
+/* Code Highlighting */
+.pk-ai-content pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+.pk-ai-content code {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .pk-ai-prompt-input {
+        min-height: 80px;
+    }
+    
+    .pk-ai-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Animations */
+@keyframes pk-ai-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pk-ai-fade {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .pk-ai-content {
+        background: #2d3436;
+        color: #f5f6fa;
+    }
+    
+    .pk-ai-prompt-input {
+        background: #2d3436;
+        border-color: #636e72;
+        color: #f5f6fa;
+    }
+    
+    .pk-ai-error {
+        background: #4b1818;
+        color: #ff7675;
+    }
+    
+    .pk-ai-content pre {
+        background: #2d3436;
+    }
+    
+    .pk-ai-character-counter {
+        color: #b2bec3;
+    }
+}
