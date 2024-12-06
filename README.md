@@ -1,98 +1,77 @@
-# PK Elementor AI Widget
+# PK Elementor AI
 
-Een geavanceerde Elementor widget voor WordPress die AI-gegenereerde content integreert met behulp van de OpenAI API.
+A professional AI extension for Elementor that integrates ChatGPT capabilities into your WordPress website.
 
-## 🌟 Functies
+Een professionele AI-extensie voor Elementor die ChatGPT-mogelijkheden integreert in je WordPress-website.
 
-- **AI Content Generatie**
-  - Integratie met OpenAI's GPT-3.5 Turbo
-  - Real-time content generatie
-  - Configureerbare token limieten
-  - Preview en button-triggered modes
+## Description | Beschrijving
 
-- **Performance Optimalisaties**
-  - Slim cache systeem
-  - Batch processing van API requests
-  - Asynchrone content generatie
-  - Rate limiting voor API verzoeken
+[English]
+PK Elementor AI enhances your Elementor page builder with artificial intelligence capabilities. Generate content, get creative suggestions, and optimize your workflow using the power of ChatGPT.
 
-- **Geavanceerde Beveiliging**
-  - IP-gebaseerde rate limiting
-  - Veilige API key opslag
-  - Input sanitization
-  - API key rotatie systeem
-  - Uitgebreide error logging
+Key Features:
+- AI-powered content generation
+- Smart content suggestions
+- Seamless Elementor integration
+- Multi-language support
+- User-friendly interface
 
-- **Gebruikerservaring**
-  - Modern, responsief design
-  - Dark mode ondersteuning
-  - Real-time karakter teller
-  - Laad animaties
-  - Duidelijke foutmeldingen
+[Nederlands]
+PK Elementor AI verbetert je Elementor page builder met kunstmatige intelligentie. Genereer content, ontvang creatieve suggesties en optimaliseer je workflow met behulp van ChatGPT.
 
-## 📋 Vereisten
+Belangrijke Functies:
+- AI-aangedreven contentgeneratie
+- Slimme contentvoorstellen
+- Naadloze Elementor-integratie
+- Ondersteuning voor meerdere talen
+- Gebruiksvriendelijke interface
 
-- WordPress 5.0 of hoger
-- Elementor 3.0.0 of hoger
-- PHP 7.0 of hoger
-- OpenAI API key
+## Installation | Installatie
 
-## 🔧 Installatie
+[English]
+1. Upload the plugin files to `/wp-content/plugins/pk-elementor-ai`
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure your API settings in the plugin dashboard
+4. Start using the AI widgets in Elementor
 
-1. Download de plugin
-2. Upload naar wp-content/plugins/
-3. Activeer de plugin via het WordPress admin panel
-4. Ga naar Elementor > AI Settings om je OpenAI API key in te stellen
-5. Begin met het gebruik van de AI widget in Elementor!
+[Nederlands]
+1. Upload de pluginbestanden naar `/wp-content/plugins/pk-elementor-ai`
+2. Activeer de plugin via het 'Plugins' menu in WordPress
+3. Configureer je API-instellingen in het plugin dashboard
+4. Begin met het gebruik van de AI-widgets in Elementor
 
-## ⚙️ Configuratie
+## Requirements | Vereisten
 
-### API Instellingen
-- Navigeer naar Elementor > AI Settings
-- Voer je OpenAI API key in
-- Configureer cache duur en rate limiting
+- WordPress 5.0 or higher
+- Elementor 3.0.0 or higher
+- PHP 7.0 or higher
 
-### Widget Instellingen
-- **Preview Mode**: Kies tussen live preview of button-triggered generatie
-- **Token Limiet**: Stel het maximum aantal tokens in voor gegenereerde content
-- **Creativiteit**: Pas de temperature parameter aan voor meer of minder creatieve responses
-- **Cache**: Configureer cache duur per widget
+## Support | Ondersteuning
 
-## 🎨 Styling
+For support, please visit [pieterkeuzenkamp.nl](https://www.pieterkeuzenkamp.nl) or email info@pieterkeuzenkamp.nl
 
-De widget ondersteunt uitgebreide styling opties via Elementor:
-- Typography controls
-- Kleur aanpassingen
-- Achtergrond instellingen
-- Border styling
-- Box shadow effecten
-- Padding en margin controls
-- Responsive design instellingen
+Voor ondersteuning, bezoek [pieterkeuzenkamp.nl](https://www.pieterkeuzenkamp.nl) of mail naar info@pieterkeuzenkamp.nl
 
-## 🔒 Beveiliging
+## Version History | Versiegeschiedenis
 
-- Alle user input wordt gesanitized
-- API keys worden veilig opgeslagen
-- Rate limiting voorkomt misbruik
-- IP-tracking voor extra beveiliging
-- Uitgebreide error logging zonder gevoelige data
+### 1.1
+- Added multi-language support
+- Enhanced AI processing capabilities
+- Improved user interface
+- Bug fixes and performance improvements
 
-## 📝 Changelog
+### 1.0
+- Initial release
 
-### Versie 1.0.0
-- Initiële release
-- AI content generatie functionaliteit
-- Geavanceerde caching en rate limiting
-- Uitgebreide styling opties
-- Dark mode ondersteuning
-- Performance optimalisaties
+## Author Information
 
-## 🤝 Support
-
-Voor support vragen, neem contact op via:
-- Website: [www.pieterkeuzenkamp.nl](https://www.pieterkeuzenkamp.nl)
+- Author: Pieter Keuzenkamp
+- Company: Pieter Keuzenkamp Websites
+- Website: [pieterkeuzenkamp.nl](https://www.pieterkeuzenkamp.nl)
 - Email: info@pieterkeuzenkamp.nl
 
-## 📜 Licentie
+## License | Licentie
 
-Copyright © 2023 Pieter Keuzenkamp Websites. Alle rechten voorbehouden.
+This project is licensed under the GPL v2 or later - see the LICENSE file for details.
+
+Dit project is gelicentieerd onder de GPL v2 of later - zie het LICENSE-bestand voor details.

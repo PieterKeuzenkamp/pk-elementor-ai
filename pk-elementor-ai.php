@@ -2,11 +2,12 @@
 /**
  * Plugin Name: PK Elementor AI
  * Description: Een professionele AI-extensie voor Elementor die gebruik maakt van ChatGPT.
- * Version: 1.0
+ * Version: 1.1
  * Author: Pieter Keuzenkamp
  * Company: Pieter Keuzenkamp Websites
  * Author URI: https://www.pieterkeuzenkamp.nl
- * Text Domain: pk-elementor-widgets
+ * Text Domain: pk-elementor-ai
+ * Domain Path: /languages
  * Requires Elementor: 3.0.0
  * Requires PHP: 7.0
  */
@@ -18,10 +19,11 @@ if (!defined('ABSPATH')) {
 // Plugin constanten
 define('PK_ELEMENTOR_AI_PATH', plugin_dir_path(__FILE__));
 define('PK_ELEMENTOR_AI_URL', plugin_dir_url(__FILE__));
-define('PK_ELEMENTOR_AI_VERSION', '1.0.0');
+define('PK_ELEMENTOR_AI_VERSION', '1.1');
 
-// Admin menu en instellingen
+// Core includes
 require_once(PK_ELEMENTOR_AI_PATH . 'includes/admin/settings.php');
+require_once(PK_ELEMENTOR_AI_PATH . 'includes/core/ai-processor.php');
 
 /**
  * Initialiseer de plugin
@@ -85,7 +87,7 @@ class PK_Elementor_AI {
         }
 
         $message = sprintf(
-            __('"%1$s" vereist "%2$s" om te functioneren.', 'pk-elementor-widgets'),
+            __('"%1$s" requires "%2$s" to be installed and activated.', 'pk-elementor-ai'),
             '<strong>PK Elementor AI</strong>',
             '<strong>Elementor</strong>'
         );

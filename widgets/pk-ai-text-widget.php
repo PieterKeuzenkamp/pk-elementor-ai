@@ -1,20 +1,23 @@
 <?php
 
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+
 // Verzeker dat Elementor beschikbaar is voordat we verder gaan
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Blokkeer directe toegang
 }
 
-class EAI_Custom_AI_Text_Widget extends \Elementor\Widget_Base {
+class PK_AI_Text_Widget extends Widget_Base {
 
     // Geef de widget een unieke naam
     public function get_name() {
-        return 'eai_custom_ai_text';
+        return 'pk_ai_text';
     }
 
     // Geef de widget een titel weer in Elementor
     public function get_title() {
-        return __( 'AI Text Generator', 'eai-custom' );
+        return __( 'AI Text Generator', 'pk-elementor-widgets' );
     }
 
     // Specificeer een icoon voor de widget
@@ -32,7 +35,7 @@ class EAI_Custom_AI_Text_Widget extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => __( 'Content', 'eai-custom' ),
+                'label' => __( 'Content', 'pk-elementor-widgets' ),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -40,10 +43,10 @@ class EAI_Custom_AI_Text_Widget extends \Elementor\Widget_Base {
         $this->add_control(
             'prompt',
             [
-                'label' => __( 'AI Prompt', 'eai-custom' ),
+                'label' => __( 'AI Prompt', 'pk-elementor-widgets' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'input_type' => 'text',
-                'placeholder' => __( 'Voer je prompt in...', 'eai-custom' ),
+                'placeholder' => __( 'Voer je prompt in...', 'pk-elementor-widgets' ),
             ]
         );
 
@@ -56,7 +59,7 @@ class EAI_Custom_AI_Text_Widget extends \Elementor\Widget_Base {
         $prompt = $settings['prompt'];
 
         if ( ! empty( $prompt ) ) {
-            $response = eai_custom_get_ai_response( $prompt );
+            $response = pk_get_ai_response( $prompt );
             echo '<div class="ai-generated-content">' . esc_html( $response ) . '</div>';
         }
     }
